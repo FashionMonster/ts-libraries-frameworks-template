@@ -195,7 +195,7 @@ yarn add @prisma/client
 npx prisma init
 ```
 
-12-2 [.env と prisma/schema.prisma の編集](https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/relational-databases/connect-your-database-typescript-mysql/)
+12-2 [.env と prisma/schema.prisma の編集](https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/relational-databases/connect-your-database-typescript-mysql/)<br>
 **※ローカル以外の DB 接続を定義する場合、.env は git の管理対象から外すように.gitignore を編集する**
 
 12-3 [データモデルを定義する](https://docs.nestjs.com/recipes/prisma#set-up-prisma)
@@ -221,7 +221,7 @@ model Post {
 }
 ```
 
-12-4 [DB マイグレーションの実行](https://docs.nestjs.com/recipes/prisma#set-up-prisma)
+12-4 [DB マイグレーションの実行](https://docs.nestjs.com/recipes/prisma#set-up-prisma)<br>
 → prisma/schema.prisma に定義した内容でローカル DB にテーブルが作成されれば OK **※Docker コンテナ(MySQL)が起動していることが前提**
 
 ```bash
@@ -237,7 +237,7 @@ npx prisma migrate dev --name init
 - usecases/user.service.ts
 - usecases/post.service.ts
 
-12-7 [コントローラーファイル（サービス呼出し）の作成](https://docs.nestjs.com/recipes/prisma#set-up-prisma)
+12-7 [コントローラーファイル（サービス呼出し）の作成](https://docs.nestjs.com/recipes/prisma#set-up-prisma)<br>
 参照リンクの「app.controller.ts」をモデル毎に分割しています
 
 - interfaces/controllers/user.controller.ts
@@ -264,11 +264,3 @@ export class AppModule {}
 - Prisma ポスト取得
 
 #### 13. 「始め方」の 4 以降を実行
-
-## ディレクトリ構成
-
-記載予定
-
-## デプロイ方法
-
-記載予定
